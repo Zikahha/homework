@@ -1,0 +1,18 @@
+import UIKit
+
+class Student
+{
+      private var _name:String
+      private var _major:String
+      private var _age:Int
+init()
+{
+
+}
+public func study(time:Float)
+{
+      printf("学生学习时间为：\(time)")
+}
+
+var s1=Student()
+s1.study

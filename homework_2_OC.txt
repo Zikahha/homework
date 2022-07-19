@@ -1,0 +1,22 @@
+#import <Foundation/Foundation.h>
+
+@interface Student : NSObject
+{
+    NSString *_name;
+    NSString *_major;
+    int _age;
+}
+-(void) study:(float) time;
+@end
+
+@implementation Student
+-(void) study:(float)time
+{
+    printf("学生学习时间为：%f",time);
+}
+@end
+int main (int argc, const char *argv[]) {
+    Student *s1=[[Student alloc] init];
+    [s1 study:4];
+    return 0;
+}
